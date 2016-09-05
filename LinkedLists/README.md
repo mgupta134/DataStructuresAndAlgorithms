@@ -13,6 +13,6 @@ In this type of linked list data is only linked with a single connection from ri
 Head Node -> [1 | next ] -> [2 | next ] -> [3 | next ] -> [4 | next ] -> Null
 
 ##Doubly linked list
-In doubly linked list, element has a pointer to next element as well as previous element. 
+In doubly linked list, each node has a pointer to next node as well as previous node. 
 
-Head Node/Null <-> [ previous | 1 | next ] -> [ previous | 2 | next ] -> [ previous | 3 | next ] -> [ previous | 4 | next ] -> Null
+Head Node/Null <-> [ previous | 1 | next ] <-> [ previous | 2 | next ] <-> [ previous | 3 | next ] <-> [ previous | 4 | next ] -> Null
