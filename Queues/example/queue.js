@@ -1,39 +1,39 @@
-function Stack () {
+function Queue () {
 	this.items = [];
 }
 
 //Add
-Stack.prototype.enqueue = function(item){
+Queue.prototype.enqueue = function(item){
 	this.items.push(item);
 }
 
 //Remove
-Stack.prototype.dequeue = function(){
-	this.items.pop();
+Queue.prototype.dequeue = function(){
+	this.items.shift();
 }
 
 //Return the last element
-Stack.prototype.peek = function(){
-	return this.items[this.items.length-1];
+Queue.prototype.peek = function(){
+	return this.items[0];
 }
 
 //Return boolean value based on if item list is empty or not
-Stack.prototype.isEmpty = function(){
+Queue.prototype.isEmpty = function(){
 	return this.items.length === 0; 
 }
 
 //Return lenght of items
-Stack.prototype.size = function(){
+Queue.prototype.size = function(){
 	return this.items.length; 
 }
 
 //Clears items array
-Stack.prototype.clear = function(){
+Queue.prototype.clear = function(){
 	this.items = [];
 }
 
 //Logs items list in console
-Stack.prototype.print = function(){
+Queue.prototype.print = function(){
 	console.log(this.items.toString());
 }
 
